@@ -1,13 +1,22 @@
 <template>
    <div class="container">
       <div class="verse-card">
-          <!-- <h1>12/28 Wednesday</h1>
-          <p>{{ verseData }}</p>
-          <small>Genesis 15:1</small> -->
-          <template v-for="verse in bibleVerses" :key="verse" >
-            <span style="display:block; text-align: left;">{{ verse.reference }} – {{ verse.text }}</span>
-          </template>
+          <div class="flex-container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 @click="isDatePickerVisible = !isDatePickerVisible">{{ formattedToday }}</h1>
+            <small style="width: auto;">No {{ verseIndex }}. / {{ bibleVerses.length }}</small>
+          </div>
+          <p>{{ todayVerse.text }}</p>
+          <small>{{ todayVerse.reference }}</small>
       </div>
+
+      <!-- Hidden Date Picker -->
+      <input
+        type="date"
+        v-show="isDatePickerVisible"
+        @change="onDateChange"
+        ref="datePicker"
+      />
+
 
   </div>
 </template>
@@ -21,12 +30,50 @@ export default {
   },
   data() {
       return {
-        bibleVerses
+        bibleVerses,
+        
+        today: new Date(), // Current date
+        isDatePickerVisible: false,
       };
   },
   mounted(){
+    console.clear()
     console.log(this.bibleVerses)
-  }
+  },
+  methods:{
+    getDayOfYear(date) {
+      const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      const month = date.getMonth();
+      const day = date.getDate();
+      return monthDays.slice(0, month).reduce((total, days) => total + days, 0) + day;
+    },
+    isLeapDay(date) {
+      return date.getMonth() === 1 && date.getDate() === 29; // Check for Feb 29
+    },
+    onDateChange(event) {
+      // Update `today` with the selected date
+      this.today = new Date(event.target.value);
+      this.isDatePickerVisible = false;
+    },
+  },
+  computed: {
+    formattedToday() {
+      const options = { month: "2-digit", day: "2-digit", weekday: "short" };
+      return this.today.toLocaleDateString("en-US", options); // Format: MM/DD Day
+    },
+    verseIndex() {
+      const dayOfYear = this.getDayOfYear(this.today);
+
+      if (this.isLeapDay(this.today)) {
+        return this.bibleVerses.length - 1; // Last index for leap day
+      }
+
+      return (dayOfYear - 1) % this.bibleVerses.length + 1; // Adjust to 1-based index
+    },
+    todayVerse() {
+      return this.bibleVerses[this.verseIndex - 1]; // Get the verse by index (adjusted for 0-based)
+    },
+  },
 }
 </script>
 
@@ -39,6 +86,11 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     height: 100vh;
+
+
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .container {
     height: 100%;
@@ -47,16 +99,16 @@ body {
     align-items: center;
 }
 .verse-card {
-  /* width: 90vw;
+  width: 90vw;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translateX(-50%);
 
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
-  text-align: center; */
+  text-align: center;
 }
 .verse-card h1 {
     font-size: 1.5rem;
