@@ -39,6 +39,7 @@ export default {
   mounted(){
     console.clear()
     console.log(this.bibleVerses)
+    this.incrementB2()
   },
   methods:{
     getDayOfYear(date) {
@@ -54,6 +55,23 @@ export default {
       // Update `today` with the selected date
       this.today = new Date(event.target.value);
       this.isDatePickerVisible = false;
+    },
+    async incrementB2() {
+        try {
+            const url =
+            "https://script.google.com/macros/s/AKfycbwwyXZnu4rc6IbBhWe26rvCb_xeqp3vx0xHpdiaDrfyhJXQzWWpf-oOz4cFr-ckKQPT/exec?row=3";
+            const response = await fetch(url);
+            const data = await response.json();
+
+            if (data.success) {
+                this.responseMessage = data.message;
+                this.viewCount = data.newValue; // Update the view count
+            } else {
+                this.responseMessage = `Error: ${data.message}`;
+            }
+        } catch (error) {
+            this.responseMessage = `Request failed: ${error.message}`;
+        }
     },
   },
   computed: {
