@@ -32,13 +32,11 @@ export const bibleVerses = [
   { 
     reference: 'Genesis 46:3',
     context: "God speaks to Jacob in a vision at Beersheba, reassuring him not to fear going down to Egypt. He promises to make his descendants a great nation there, ensuring that God’s plan extends beyond immediate circumstances.",
-    context: "God speaks to Jacob in a vision at Beersheba, reassuring him not to fear going down to Egypt. He promises to make his descendants a great nation there, ensuring that God’s plan extends beyond immediate circumstances.",
     text: '‘I am God, the God of your father,’ he said. ‘Do not be afraid to go down to Egypt, for I will make you into a great nation there.’'
   },
 
   { 
     reference: 'Genesis 50:19',
-    context: "After Jacob’s death, Joseph’s brothers fear retaliation for their past wrongs. Joseph reassures them not to be afraid, affirming that he is not in God’s place and that God has worked through their actions for good.",
     context: "After Jacob’s death, Joseph’s brothers fear retaliation for their past wrongs. Joseph reassures them not to be afraid, affirming that he is not in God’s place and that God has worked through their actions for good.",
     text: 'But Joseph said to them, ‘Don’t be afraid. Am I in the place of God?’'
   },
