@@ -7,6 +7,10 @@
           </div>
           <p>{{ todayVerse.text }}</p>
           <small>{{ todayVerse.reference }}</small>
+          <template v-if="todayVerse.context">
+            <hr>
+            <small>{{ todayVerse.context }}</small>
+          </template>
       </div>
 
       <!-- Hidden Date Picker -->
@@ -118,6 +122,7 @@ body {
 }
 .verse-card {
   width: 90vw;
+  max-height: 80%;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -127,6 +132,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+
+  overflow: auto;
 }
 .verse-card h1 {
     font-size: 1.5rem;
