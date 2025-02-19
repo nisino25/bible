@@ -9,7 +9,7 @@
           <small>{{ todayVerse.reference }}</small>
           <template v-if="todayVerse.context">
             <hr>
-            <small>{{ todayVerse.context }}</small>
+            <small style="text-align: left;">{{ todayVerse.context }}</small>
           </template>
       </div>
 
