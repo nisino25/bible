@@ -295,61 +295,61 @@ export const bibleVerses = [
 
   { 
     reference: 'Job 21:9',
-    context: "Job argues that the wicked often live securely and without fear, challenging the belief that suffering is always a direct result of sin.",
+    "context": "In this passage, Job challenges the assumption made by his friends that suffering is always a direct result of sin. His friends have argued that the wicked are always punished, but Job points out that many evil people seem to live secure and prosperous lives. He observes that their homes are safe, they have no fear, and they are not visibly suffering under God's judgment. Job's words reflect his inner turmoil as he wrestles with the apparent injustice in the world, questioning why the wicked often thrive while the righteous suffer. This verse contributes to the broader theme of Job: the mystery of suffering and God's justice.",
     text: 'Their homes are safe and free from fear; the rod of God is not on them.'
   },
 
   { 
     reference: 'Psalm 3:6',
-    context: "David, while fleeing from Absalom, declares that he will not fear, even if surrounded by thousands of enemies. His confidence is in God’s protection.",
+    "context": "Psalm 3 was written by David when he was fleeing from his son Absalom, who had led a rebellion against him. At this moment, David was in a vulnerable position, with thousands of his own people turning against him. Despite the overwhelming odds and the real threat to his life, David places his trust in God. He declares that even if he is surrounded by tens of thousands of enemies, he will not be afraid. This verse illustrates David's deep faith in God’s protection, even in dire circumstances, and serves as an encouragement to remain steadfast in faith during trials.",
     text: 'I will not fear though tens of thousands assail me on every side.'
   },
 
   { 
     reference: 'Psalm 4:8',
-    context: "David proclaims his ability to sleep peacefully because God alone makes him dwell in safety. His trust in God overcomes fear and anxiety.",
+    "context": "This psalm is traditionally attributed to David and is often considered an evening prayer. The context suggests that David is experiencing distress, possibly due to political turmoil or personal betrayal. However, instead of allowing anxiety to consume him, David finds his security in God. He expresses confidence that, despite external troubles, he can lie down and sleep peacefully because God alone makes him dwell in safety. This verse highlights the theme of divine peace and trust, showing that true security does not come from human power or circumstances but from reliance on God.",
     text: 'In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety.'
   },
 
   { 
     reference: 'Psalm 16:7-9',
-    context: "David acknowledges God's guidance and protection, which give him joy and security. He declares that because God is with him, he will not be shaken.",
+    "context": "Psalm 16 is a psalm of trust and devotion to God, written by David. In this passage, David expresses his gratitude for God’s guidance and protection. He acknowledges that even in the night, God instructs him, shaping his decisions and giving him wisdom. Because David has set the Lord always before him, he has an unshakable confidence that he will not be moved, leading to joy and security. This verse reflects the assurance that God is always near, providing guidance and stability in all aspects of life, even during times of uncertainty.",
     text: 'I will praise the Lord who counsels me; even at night my heart instructs me. I keep my eyes always on the Lord. With him at my right hand, I shall not be shaken. Therefore my heart is glad and my tongue rejoices; my body also will rest secure.'
   },
 
   { 
     reference: 'Psalm 23:4',
-    context: "David describes walking through the valley of the shadow of death without fear because God’s presence comforts and guides him.",
+    "context": "Psalm 23 is one of the most well-known and beloved psalms, written by David. This particular verse describes the deep trust the psalmist has in God’s protection, even when facing extreme danger. The 'valley of the shadow of death' is a metaphor for moments of great fear, suffering, or even literal death. Despite such challenges, David declares that he will not fear because God is with him. The 'rod' and 'staff' are shepherding tools that guide and protect sheep, symbolizing God’s presence and care. This verse reassures believers that even in life's darkest moments, they are not alone—God is their shepherd, guiding and comforting them.",
     text: 'Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff they comfort me.'
   },
 
   { 
     reference: 'Psalm 27:1',
-    context: "David proclaims that the Lord is his light and salvation, making fear irrelevant. His trust in God gives him confidence against all enemies.",
+    "context": "Psalm 27 is a declaration of faith and confidence in God’s protection, attributed to David. This verse begins the psalm with a bold proclamation: God is his light (his guide and wisdom), his salvation (his deliverance), and his stronghold (his protection). David asks rhetorically, ‘Whom shall I fear?’ emphasizing that with God on his side, no enemy or adversity can ultimately harm him. The historical background may be related to David’s experiences fleeing from Saul or facing other enemies, but the broader application is one of unwavering trust in God as a protector in all situations.",
     text: 'The Lord is my light and my salvation – whom shall I fear? The Lord is the stronghold of my life – of whom shall I be afraid?'
   },
 
   { 
     reference: 'Psalm 27:3',
-    context: "Even if an army surrounds him, David declares that he will not fear. His confidence is in God’s protection.",
+    "context": "In the midst of trials and potential battles, David declares his unshakable confidence in God. This verse is part of a psalm that reflects both David’s personal experiences of warfare and his trust in divine protection. He acknowledges that even if he is surrounded by an army or faces the threat of war, his heart will remain steadfast and unafraid. This verse demonstrates the power of faith in the face of overwhelming danger and serves as an encouragement for believers to trust in God, no matter how dire their circumstances may seem.",
     text: 'Though an army besiege me, my heart will not fear; though war break out against me, even then I will be confident.'
   },
 
   { 
     reference: 'Psalm 29:11',
-    context: "The psalmist declares that God gives strength and peace to His people, reassuring them of His ongoing support and provision.",
+    "context": "Psalm 29 is a powerful depiction of God's majesty, describing His voice as thundering over creation. The psalm emphasizes God's strength and sovereignty over nature, demonstrating His supreme authority. After acknowledging God’s power, the psalmist concludes with a blessing: the Lord gives strength to His people and blesses them with peace. This verse reassures believers that the same God who commands the storms also grants His people the inner peace and strength they need to navigate life’s challenges.",
     text: 'The Lord gives strength to his people; the Lord blesses his people with peace. '
   },
 
   { 
     reference: 'Psalm 46:2',
-    context: "A declaration of trust in God’s protection, even if the earth trembles and mountains fall into the sea. God is greater than any natural disaster or upheaval.",
+    "context": "Psalm 46 is a song of trust in God’s protection, often associated with times of national crisis or personal turmoil. It begins with the declaration that God is a refuge and strength, a present help in trouble. This verse expresses unwavering faith that even if the earth collapses and mountains fall into the sea—symbolic of cataclysmic events—there is no reason to fear. The psalmist's confidence is rooted in God’s sovereign control, affirming that no disaster, natural or man-made, can overcome those who trust in Him.",
     text: 'Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea.'
   },
 
   { 
     reference: 'Psalm 49:16',
-    context: "A warning not to fear when the wicked grow wealthy, as their riches are temporary and cannot save them from death.",
+    "context": "Psalm 49 is a wisdom psalm that warns against placing trust in wealth and material possessions. The psalmist advises not to be intimidated or envious when others grow rich or appear to prosper. He points out that wealth is temporary and cannot save anyone from death. This verse serves as a reminder that true security does not come from earthly success but from trusting in God. It echoes the biblical theme that riches are fleeting, while God's presence and promises endure forever.",
     text: 'Do not be overawed when others grow rich, when the splendour of their houses increases;'
   },
 
